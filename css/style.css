@@ -477,9 +477,9 @@ p {
   color: white;
 }
 
-/* ==========================================================================
+/*
     Services Styling
-   ========================================================================== */
+    */
 #services {
   padding-top: 160px;
   margin-top: -60px;
@@ -489,7 +489,7 @@ p {
   padding-bottom: 40px;
   text-align: center;
   -webkit-backface-visibility: hidden;
-  /* Chrome, Safari, Opera */
+
   backface-visibility: hidden;
 }
 .service-item h3 {
@@ -517,9 +517,9 @@ p {
   background-image: url(../images/service-fourth.png);
 }
 
-/* ==========================================================================
+/*
     Promotion Styling
-   ========================================================================== */
+    */
 .item-small {
   padding: 20px;
   background-color: #26b864;
