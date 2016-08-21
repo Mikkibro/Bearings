@@ -41,21 +41,25 @@
 
     $('.main-menu').singlePageNav();
 
-	$(document).ready(function(){
-		$('a[href*=#]').bind("click", function(e){
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top
-			}, 1000);
-			e.preventDefault();
+	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+		e.preventDefault();
+
+		var target = this.hash,
+			$target = $(target);
+
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 1200, 'swing', function () {
+			window.location.hash = target;
 		});
-		return false;
 	});
 
 
 
-
 })(window, jQuery);
+
+
+
 
 var map = '';
 function initialize() {
